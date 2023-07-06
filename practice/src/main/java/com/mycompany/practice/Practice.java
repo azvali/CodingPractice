@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.practice;
+import objects.Car;
 
-/**
- *
- * @author azval
- */
+
+
 public class Practice {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Car v1 = new Car();
+        v1.setColor("green");
+        
+        System.out.printf("%s" , v1.getColor());
     }
 }
+
