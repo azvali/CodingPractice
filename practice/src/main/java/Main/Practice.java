@@ -30,7 +30,7 @@ public class Practice {
                 //do nothing
             } 
         }
-        System.out.printf("the min is %d" , temp);
+        System.out.printf("the minimum is %d" , temp);
         // sort in ascending order
        //for(int i = 0; i < arr.length ; i++){
            // if
