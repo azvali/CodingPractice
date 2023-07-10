@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class fileRead {
     fileRead(){
         try{    
-            File file = new File("C:\\Users\\azval\\OneDrive\\Desktop\\data.txt");
+            File file = new File("/Users/admin/Desktop/csi3210/data.txt");
             Scanner scan = new Scanner(file);
             try{
                 while(scan.hasNextLine()){
