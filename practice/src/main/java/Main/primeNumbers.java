@@ -4,13 +4,13 @@ package Main;
 
 public class primeNumbers {
     
-    public static void prime1(){
+    public static void prime(){
         
         int n = 2;
         boolean isPrime = true;
         
         while(n <= 10000){
-            for(int i = 2 ; i < 10000; i++){
+            for(int i = 2 ; i < n; i++){
                 if(n == i){
                     continue;
                 }
@@ -27,14 +27,5 @@ public class primeNumbers {
             }
             n++;
         }
-    }
-    public static void prime2(){
-        int[] arr = new int[10000];
-        
-        for(int i = 1; i <= arr.length; i++){
-            arr[i] = i;
-        }
-        System.out.printf("%d", arr[33]);
-        
     }
 }

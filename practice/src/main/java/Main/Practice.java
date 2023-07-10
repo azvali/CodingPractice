@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Practice {
 
     public static void main(String[] args) {
-        /******************************
         //get length of list
         int count;        
         Scanner scan = new Scanner(System.in);
@@ -42,8 +41,7 @@ public class Practice {
                 System.out.println("\n");
             }
         }
-        *********************************/
-       primeNumbers.prime2();
+       //primeNumbers.prime1();
         
     }
 }
