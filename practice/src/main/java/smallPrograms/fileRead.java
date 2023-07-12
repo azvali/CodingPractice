@@ -17,9 +17,16 @@ public class fileRead {
             File file = new File("/Users/admin/Desktop/csi3210/data.txt");
             Scanner scan = new Scanner(file);
             try{
-                while(scan.hasNextLine()){
-                    System.out.println(scan.nextLine());
+                int i = 0;
+                int sum = 0;
+                double average;
+                while(scan.hasNextInt()){
+                    sum += scan.nextInt();    //total of all integers in txt file
+                    i++;     //number of integers added together
                 }
+                //find the average 
+                average = (double)sum / (double)i;
+                System.out.printf("The average is %.3f" , average);
             }
             finally{
                 scan.close();
