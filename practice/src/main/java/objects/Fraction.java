@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package smallPrograms;
+package objects;
 
-/**
- *
- * @author azval
- */
+
 public class Fraction implements Cloneable{
       /** den>0 and
 
@@ -24,7 +17,7 @@ public class Fraction implements Cloneable{
         else return gcd(b, a%b);  
     }
 
-    @override
+    @Override
     public boolean equals(Object f){
         if(this == f){
             return true;
@@ -37,8 +30,31 @@ public class Fraction implements Cloneable{
         return num == other.num && den == other.den;
     }
 
-    @override
+    @Override
     public String toString() {
         return num + "/" + den;
+    }
+    
+    public double reduce(){
+        int gcd = gcd(num , den);
+        num /= gcd;
+        den /= gcd;
+        return num / den;
+    }    
+    @Override
+    public Object clone()throws CloneNotSupportedException {
+        return super.clone();
+    }
+    public void setNum(int a){
+        this.num = a;
+    }
+    public int getNum(){
+        return num;
+    }
+    public void setDen(int a){
+        this.den = a;
+    }
+    public int getDen(){
+        return den;
     }
 }
